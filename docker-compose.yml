@@ -3,6 +3,7 @@ services:
   hologram:
     build: .
     container_name: hologram
+    entrypoint: /bin/bash
     volumes:
       - /run/udev:/run/udev:ro
     devices:
