@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hologram:
+    build: .
+    container_name: hologram
+    volumes:
+      - /run/udev:/run/udev:ro
+    devices:
+      - /dev/ttyUSB1:/dev/ttyUSB1
+    privileged: true
